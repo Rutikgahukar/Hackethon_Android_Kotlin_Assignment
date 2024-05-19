@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".View.SelectSlotActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:titleTextColor="@android:color/white"
+        app:subtitleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/CalenderbackArrow"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/leftarrow"
+            android:layout_gravity="start"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date &amp; Slot"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+<!--        <com.sahana.horizontalcalendar.HorizontalCalendarView-->
+<!--            android:id="@+id/horizontalCalendar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:setBgColor="@color/lightblue"-->
+<!--            app:setSelectedBgColor="@color/button_blue"-->
+<!--            app:setTextColor="@color/white"-->
+<!--            app:setSelectedTextColor="@color/white"-->
+<!--            app:setDateTextSize="22sp"-->
+<!--            app:setWeekTextSize="13sp"-->
+<!--            app:setMonthTextSize="17sp" />-->
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:gravity="center" />
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/fetchrecyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SelectSlotsNextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:padding="13dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_background"/>
+
+
+</LinearLayout>

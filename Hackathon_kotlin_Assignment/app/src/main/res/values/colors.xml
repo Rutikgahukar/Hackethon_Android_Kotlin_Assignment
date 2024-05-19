@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#F7F7FA</color>
+    <color name="button_blue">#6378ED</color>
+    <color name="grey_white">#5B5A5A</color>
+    <color name="lightblue">#8F9EEF</color>
+    <color name="active_slot">#FF6200EE</color>
+    <color name="inactive_slot">#FFBDBDBD</color>
+</resources>
